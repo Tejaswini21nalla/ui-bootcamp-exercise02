@@ -1,0 +1,63 @@
+@import "colors";
+
+*{
+    box-sizing: border-box;
+}
+
+@mixin dimensions($width, $height) {
+    width:$width;
+    height:$height;
+}
+.container{
+    @include dimensions(500px,500px);
+    margin:10px;
+    border:1px solid black;
+    float:left;
+    position:relative;
+}
+
+.box{
+    @include dimensions(200px,200px);
+    position: absolute;
+}
+
+.innercontainer{
+    @extend .box;
+    background-color: $green;
+    top:150px;
+    left:150px;
+}
+
+.topright{
+    @extend .box;
+    background-color: $green;
+    right:0px;
+    top:0px;
+}
+
+.topleft{
+    @extend .box;
+    background-color: $red;
+}
+
+.bottomleft{
+    @extend .box;
+    background-color: $blue;
+    bottom:0px;
+    left:0px;
+}
+
+.bottomright{
+    @extend .box;
+    background-color:$yellow;
+    bottom:0px;
+    right:0px;
+}
+
+.innerbox{
+    @include dimensions(100px, 100px);
+    background-color: #ffffff;
+    top:50px;
+    left:50px;
+    position: absolute;
+}
