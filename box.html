@@ -20,39 +20,34 @@
             .box{
                 width:200px;
                 height:200px;
+            }
+
+            .innercontainer{
                 background-color: #008000;
                 position: absolute;
                 top:150px;
                 left:150px;
             }
 
-            .box1{
-                width:200px;
-                height:200px;
+            .topright{
                 background-color: #008000;
                 position:absolute;
                 right:0px;
                 top:0px;
             }
 
-            .box2{
-                width:200px;
-                height:200px;
+            .topleft{
                 background-color: #ca1e1e;
             }
 
-            .box3{
-                width:200px;
-                height:200px;
+            .bottomleft{
                 background-color: #1b71b8;
                 position:absolute;
                 bottom:0px;
                 left:0px;
             }
 
-            .box4{
-                width:200px;
-                height:200px;
+            .bottomright{
                 background-color: #a9c132;
                 position:absolute;
                 bottom:0px;
@@ -71,25 +66,25 @@
     </head>
     <body>
         <div class="container">
-            <div class="box"></div>
+            <div class="box innercontainer"></div>
         </div>
         <div class="container">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
+            <div class="box topright"></div>
+            <div class="box topleft"></div>
+            <div class="box bottomleft"></div>
+            <div class="box bottomright"></div>
         </div>
         <div class="container">
-            <div class="box1">
+            <div class="box topright">
                 <div class="innerbox"></div>
             </div>
-            <div class="box2">
+            <div class="box topleft">
                 <div class="innerbox"></div>
             </div>
-            <div class="box3">
+            <div class="box bottomleft">
                 <div class="innerbox"></div>
             </div>
-            <div class="box4">
+            <div class="box bottomright">
                 <div class="innerbox"></div>
             </div>
         </div>
